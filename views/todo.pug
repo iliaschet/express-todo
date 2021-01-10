@@ -1,0 +1,17 @@
+extends layout
+
+block main
+    if todo
+        table.simple-table
+            tbody
+                tr
+                    td id
+                    td= todo.id
+                tr
+                    td title
+                    td= todo.title 
+                tr
+                    td completed
+                    td= todo.completed              
+    else
+        p Задачи нет    
